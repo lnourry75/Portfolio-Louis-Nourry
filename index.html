@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSAP Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+    
+    <div class="lignes">
+        <div class="l1"></div>
+        <div class="l2"></div>
+    </div>
+
+    <div class="container-first">
+        <h1><span>Bienvenue </span><span>sur </span><span>mon </span><span>portfolio</span></h1>
+        <div class="container-btns">
+          <a href="#container-second"><button class="btn-first b1">Home</button></a>
+          <a href="#container-third"><button class="btn-first b2">Compétences</button></a>
+            <a href="#container-four"><button class="btn-first b3">Portfolio</button></a>
+        </div>
+    </div>
+
+    <img src="ressources/cv.jpg" class="logo">
+
+
+    <ul class="medias">
+      <a href="https://www.facebook.com/louis.nourry.1/"><li class="bulle"><img src="ressources/fb.svg" class="logo-medias"></li></a>
+      <a href="https://www.instagram.com/l_nourry_75/?hl=fr"><li class="bulle"><img src="ressources/insta.svg" class="logo-medias"></li></a>
+        <a href="https://www.linkedin.com/in/louis-nourry-463727207/"><li class="bulle"><img src="ressources/linkedin.png" class="logo-medias"></li></a>
+        <a href="https://github.com/lnourry75"><li class="bulle"><img src="ressources/github.svg" class="logo-medias"></li></a>
+    </ul>
+
+    </header>
+
+    <div class="container-second reveal" id="container-second">
+        <h1><span>Louis </span><span>Nourry, </span><span>Développeur </span><span>Web</span></h1>
+      
+
+        <div class="louis reveal">
+        <div class="photo"><img src="ressources/cv.jpg" alt="" width="360px"></div>
+        <div class="texte"> <p> Je m’appelle Louis Nourry, j’ai 20 ans et je suis étudiant en 2ème année de Développement Web à l’institut de l’Internet et du Multimédia. Je suis passioné par 
+            le front-end et je m'intéresse aussi au back-end.
+        </p> </div>
+    </div>
+    
+    </div>
+ 
+
+    <div class="container-third reveal" id="container-third">
+        <h1 id="container-third-h1"><span>Mes </span><span>Compétences </span><span>de </span><span>Développeur </span><span>Web</span></h1>
+
+        <button class="toggle reveal" onclick="toggle()">En savoir plus</button>
+
+        <div id="skills">
+            <img src="ressources/pexels-ken-tomita-389818.jpg" width="100%" alt="">
+        </div>
+      
+
+        <div id="competence" class="reveal">
+        
+            <div class="team">
+              <div class="team_member">
+                <div class="team_img">
+                  <img src="ressources/html.png" alt="Team_image">
+                </div>
+                <h3>HTML</h3>
+                
+                <p class="role">Structure d'un document et d'un site web <br><br>
+                Débuguer du code HTML <br><br>
+                Créer des hyperliens <br><br>
+                La mise en forme avancée du texte <br><br>
+                Les formulaires HTML</p>
+              </div>
+              <div class="team_member">
+                <div class="team_img">
+                  <img src="ressources/css.png" alt="Team_image">
+                </div>
+                <h3>CSS</h3>
+                
+                <p class="role">Mise en forme du texte d'une page <br><br>
+                Inclusion d'images <br><br>
+                Placement des éléments statiques ou dynamiques <br><br>
+                Les grilles CSS <br><br>
+                Les medias queries</p></div>
+              <div class="team_member">
+                <div class="team_img">
+                  <img src="ressources/js.jpg" alt="Team_image">
+                </div>
+                <h3>JS</h3>
+                
+                <p class="role">Les Booléens et les String <br><br>
+                Les instructions et les déclarations <br><br>
+                Les fonctions </p>
+              </div>
+              <div class="team_member">
+                <div class="team_img">
+                  <img src="ressources/wordpress.jpg" alt="Team_image">
+                </div>
+                <h3>Wordpress</h3>
+               
+                <p class="role">Créer et générer différents types de sites web <br><br>
+                Stockage sur une base de données MySQL <br><br>
+                Utilisations de PHP pour communiquer avec les bases de données</p>
+              </div>
+              <div class="team_member">
+                <div class="team_img">
+                  <img src="ressources/figma.png" alt="Team_image">
+                </div>
+                
+                <h3>Figma</h3>
+               
+                <p class="role">Réalisations de maquettes de sites web <br><br>
+                User Interface des sites <br><br>
+                Prototype  <br><br>
+               Mise en place d'une palette de couleur pour le site ou l'application </p>
+              </div>
+              <div class="team_member">
+                <div class="team_img">
+                  <img src="ressources/xd.png" alt="Team_image">
+                </div>
+                <h3>Adobe XD</h3>
+                
+                <p class="role">Création de Wireframes <br><br>
+                Réalisation de maquette de sites web <br><br>
+                Prototype <br><br>
+                User Experience des sites ou applications développées</p>
+              </div>
+            </div>
+    
+    </div>
+</div>
+
+    <div class="container-four" id="container-four">
+        <h1 class="reveal">Mon </span><span>Portfolio </span></h1>
+      
+
+        <div class="grille reveal">
+            <div class="grille_container">
+              <div class="content">
+                <img src="ressources/1.JPG" width="100%" alt="">
+              
+              </div>
+            </div>
+            <div class="grille_container">
+              <div class="content">
+                <img src="ressources/screen1.PNG" width="100%" height="100%" alt="">
+               
+              </div>
+            </div>
+            <div class="grille_container">
+              <div class="content">
+                <img src="ressources/3.JPG" width="100%" alt="">
+             
+              </div>
+            </div>
+            <div class="grille_container">
+              <div class="content">
+                <img src="ressources/screen2.PNG" width="100%" alt="">
+             
+              </div>
+            </div>
+            <div class="grille_container">
+              <div class="content">
+                <img src="ressources/5.JPG" width="100%" alt="">
+           
+              </div>
+            </div>
+            <div class="grille_container">
+              <div class="content">
+                <img src="ressources/6.JPG" width="100%" alt="">
+            
+              </div>
+            </div>
+            <div class="grille_container">
+                <div class="content">
+                  <img src="ressources/7.JPG" width="100%" alt="">
+
+                
+                </div>
+              </div>
+              <div class="grille_container">
+                <div class="content">
+                  <img src="ressources/8.JPG" width="100%" alt="">
+                  
+                
+                </div>
+              </div>
+              <div class="grille_container">
+                <div class="content">
+                  <img src="ressources/9.JPG" width="100%" alt="">
+                  
+                
+                </div>
+              </div>
+
+              
+    </div>
+
+        
+</div>
+
+    <div class="content_text reveal">
+
+        <h1><span>Edward </span><span>Kenway </span></h1>
+        <p> Lors de mon année préparatoire pour passer en axe Développement Web j'ai du réaliser un site sur un personnage de mon choix , étant fan du personnage j'ai choisi Edward Kenway de la licence Assassin's Creed . J'ai du réaliser le site en 5 pages imposées : Accueil / Histoire / Images / Blog / Contact . <br><br>
+         Mon site contient un menu burger , un dark mode , une galerie d'images mansory , une page de connexion , un formulaire de contact ... On peut se connecter soit en tant qu'utilisateur pour par exemple poster un article de blog ou un commentaire , on peut se connecter en tant qu'administrateur pour bannier des membres , supprimer des commentaires ou des articles de blog ou encore pour contacter les utilisateurs . <br><br>
+        Chaque page est composé de plusieurs animations en css ou js : une animation pour le menu burger mais aussi pour les images placés autour du container , un bouton pour retourner en haut de la page et une animation pour modifier la taille des images dans la galerie mansory. </p>
+   </div>
+
+
+   <div class="container-fifth">
+    <h1 class="reveal"><span>Mon </span><span>Portfolio </span></h1>
+  
+
+    <div class="grille2 reveal">
+      <div class="grid-item">
+      <img src="ressources/baya1.PNG" width="500px" height="250px">    
+      </div>
+      <div class="grid-item">
+          <img src="ressources/baya2.PNG" width="500px" height="250px"> 
+      </div>
+      <div class="grid-item">  <img src="ressources/baya3.PNG" width="500px" height="250px"> </div>
+      
+      <div class="grid-item">  <img src="ressources/baya4.PNG" width="500px" height="250px"> </div>
+      <div class="grid-item">  <img src="ressources/baya5.PNG" width="500px" height="250px"> </div>
+      <div class="grid-item">  <img src="ressources/baya6.PNG" width="500px" height="250px"> </div>
+      <div class="grid-item">  <img src="ressources/baya7.PNG" width="500px" height="250px"> </div>
+      <div class="grid-item">  <img src="ressources/baya8.PNG" width="500px" height="250px"> </div>
+      <div class="grid-item">  <img src="ressources/baya9.PNG" width="500px" height="250px"></div>
+     
+  
+  
+</div>
+          </div>
+
+          
+
+<div class="contentenu_text reveal">
+
+    <h1><span>Site </span><span>BAP </span></h1>
+    <p> Lors de ma première année dans l'axe Développement Web nous avons du réaliser un site e-commerce pour une cliente . Le site est composé de 11 pages au total, celui-ci a été réalisé avec l'aide d'étudiants dans l'axe Création et Design et Communication Digitale et E-Business, nous avions aussi 2 chefs de projets pour l'administration. <br><br>
+     Le site a été réalisé via Wordpress et l'extension Woocommerce pour pouvoir acheter des articles. On peut se créer un compte utilisateur pour pouvoir accéder à ses commandes, changer ses moyens de paiement ou encore consulter les détails de son compte. <br><br>
+     Les languages utilisés pour coder le site sont HTML, CSS,JS et PHP. Sur le site nous pouvons découvrir les collections de la marque Baya Rose, regarder des tutoriels pour apprendre à faire ses robes sois-même ou encore commander des articles pour se les faire livrer chez soi.  </p>
+</div>
+
+<div onclick="scrollToTop()" class="scrollTop"><img src="ressources/up.png" width="50px" alt=""></div>
+
+ 
+
+  
+
+  
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+<footer class="footer">
+  <p>@PorfolioLouisNourry-2021</p>
+</footer>
+</html>
