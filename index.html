@@ -6,7 +6,9 @@
     <title>GSAP Accueil</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-</head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="app.js"></script>
+  </head>
 <body>
 
     <header>
@@ -38,12 +40,12 @@
     </header>
 
     <div class="container-second reveal" id="container-second">
-        <h1><span>Louis </span><span>Nourry, </span><span>Développeur </span><span>Web</span></h1>
+        <h1 class="reveal-1">Louis </span><span>Nourry, </span><span>Développeur </span><span>Web</span></h1>
       
 
-        <div class="louis reveal">
-        <div class="photo"><img src="ressources/cv.jpg" alt="" width="360px"></div>
-        <div class="texte"> <p> Je m’appelle Louis Nourry, j’ai 20 ans et je suis étudiant en 2ème année de Développement Web à l’institut de l’Internet et du Multimédia. Je suis passioné par 
+        <div class="louis reveal-2">
+        <div class="photo reveal-3"><img src="ressources/cv.jpg" alt="" width="360px"></div>
+        <div class="texte reveal-4"> <p> Je m’appelle Louis Nourry, j’ai 20 ans et je suis étudiant en 2ème année de Développement Web à l’institut de l’Internet et du Multimédia. Je suis passioné par 
             le front-end et je m'intéresse aussi au back-end.
         </p> </div>
     </div>
@@ -51,19 +53,21 @@
     </div>
  
 
-    <div class="container-third reveal" id="container-third">
-        <h1 id="container-third-h1"><span>Mes </span><span>Compétences </span><span>de </span><span>Développeur </span><span>Web</span></h1>
+    <div class="container-third" id="container-third">
+      <div class="reveal">
+        <h1 id="container-third-h1" class="reveal-1"><span>Mes </span><span>Compétences </span><span>de </span><span>Développeur </span><span>Web</span></h1>
 
-        <button class="toggle reveal" onclick="toggle()">En savoir plus</button>
+        <button class="toggle reveal-2" onclick="toggle()">En savoir plus</button>
 
         <div id="skills">
             <img src="ressources/pexels-ken-tomita-389818.jpg" width="100%" alt="">
         </div>
+      </div>
       
 
         <div id="competence" class="reveal">
         
-            <div class="team">
+            <div class="team reveal-2">
               <div class="team_member">
                 <div class="team_img">
                   <img src="ressources/html.png" alt="Team_image">
@@ -71,12 +75,12 @@
                 <h3>HTML</h3>
                 
                 <p class="role">Structure d'un document et d'un site web <br><br>
-                Débuguer du code HTML <br><br>
-                Créer des hyperliens <br><br>
-                La mise en forme avancée du texte <br><br>
+                Débuguer du code HTML<br><br>
+                Intégration de maquette<br><br>
+                Utilisation des principales balises de codage<br><br>
                 Les formulaires HTML</p>
               </div>
-              <div class="team_member">
+              <div class="team_member reveal-3">
                 <div class="team_img">
                   <img src="ressources/css.png" alt="Team_image">
                 </div>
@@ -86,8 +90,8 @@
                 Inclusion d'images <br><br>
                 Placement des éléments statiques ou dynamiques <br><br>
                 Les grilles CSS <br><br>
-                Les medias queries</p></div>
-              <div class="team_member">
+                Responsive Design avec les medias queries</p></div>
+              <div class="team_member reveal-4">
                 <div class="team_img">
                   <img src="ressources/js.jpg" alt="Team_image">
                 </div>
@@ -95,19 +99,22 @@
                 
                 <p class="role">Les Booléens et les String <br><br>
                 Les instructions et les déclarations <br><br>
+                Récupérer des données grâce à une API <br><br>
+                Animer du texte, des images et faire défiler l'écran<br><br>
                 Les fonctions </p>
               </div>
-              <div class="team_member">
+              <div class="team_member reveal-5">
                 <div class="team_img">
                   <img src="ressources/wordpress.jpg" alt="Team_image">
                 </div>
                 <h3>Wordpress</h3>
                
-                <p class="role">Créer et générer différents types de sites web <br><br>
-                Stockage sur une base de données MySQL <br><br>
-                Utilisations de PHP pour communiquer avec les bases de données</p>
+                <p class="role">Créer et éditer différents types de sites web <br><br>
+                 Installation et utilisation des extensions Wordpress<br><br>
+                 Création d'un site e-commerce avec l'extension Woocommerce<br><br>
+                 Gérer le site à partir de Wordpress-Admin</p>
               </div>
-              <div class="team_member">
+              <div class="team_member reveal-6">
                 <div class="team_img">
                   <img src="ressources/figma.png" alt="Team_image">
                 </div>
@@ -115,83 +122,83 @@
                 <h3>Figma</h3>
                
                 <p class="role">Réalisations de maquettes de sites web <br><br>
-                User Interface des sites <br><br>
-                Prototype  <br><br>
+                Prototype avec des Wireframes <br><br>
+                User Experience des sites ou applications développées <br><br>
                Mise en place d'une palette de couleur pour le site ou l'application </p>
               </div>
-              <div class="team_member">
+              <div class="team_member reveal-7">
                 <div class="team_img">
-                  <img src="ressources/xd.png" alt="Team_image">
+                  <img src="ressources/php-mysql.jpg" alt="Team_image">
                 </div>
-                <h3>Adobe XD</h3>
+                <h3>PHP/My SQL</h3>
                 
-                <p class="role">Création de Wireframes <br><br>
-                Réalisation de maquette de sites web <br><br>
-                Prototype <br><br>
-                User Experience des sites ou applications développées</p>
+                <p class="role">Création de base de données en local<br><br>
+                  Requêtes My SQL pour communiquer entre les bases de données<br><br>
+                  Récupération des données d'un formulaire de contact ou d'un blog<br><br>
+                  Mise en place d'une fonction administrateur et utilisateur</p>
               </div>
             </div>
     
     </div>
 </div>
 
-    <div class="container-four" id="container-four">
-        <h1 class="reveal">Mon </span><span>Portfolio </span></h1>
+    <div class="container-four reveal" id="container-four">
+        <h1 class="">Mon </span><span>Portfolio </span></h1>
       
 
-        <div class="grille reveal">
+        <div class="grille">
             <div class="grille_container">
               <div class="content">
-                <img src="ressources/1.JPG" width="100%" alt="">
+                <img src="ressources/1.JPG" class="reveal-1" width="100%" alt="">
               
               </div>
             </div>
             <div class="grille_container">
               <div class="content">
-                <img src="ressources/screen1.PNG" width="100%" height="100%" alt="">
+                <img src="ressources/screen1.PNG" class="reveal-2" width="100%" height="100%" alt="">
                
               </div>
             </div>
             <div class="grille_container">
               <div class="content">
-                <img src="ressources/3.JPG" width="100%" alt="">
+                <img src="ressources/3.JPG" class="reveal-3" width="100%" alt="">
              
               </div>
             </div>
             <div class="grille_container">
-              <div class="content">
+              <div class="content reveal-5">
                 <img src="ressources/screen2.PNG" width="100%" alt="">
              
               </div>
             </div>
             <div class="grille_container">
-              <div class="content">
+              <div class="content reveal-6">
                 <img src="ressources/5.JPG" width="100%" alt="">
            
               </div>
             </div>
             <div class="grille_container">
-              <div class="content">
+              <div class="content reveal-7">
                 <img src="ressources/6.JPG" width="100%" alt="">
             
               </div>
             </div>
             <div class="grille_container">
-                <div class="content">
+                <div class="content reveal-8">
                   <img src="ressources/7.JPG" width="100%" alt="">
 
                 
                 </div>
               </div>
               <div class="grille_container">
-                <div class="content">
+                <div class="content reveal-9">
                   <img src="ressources/8.JPG" width="100%" alt="">
                   
                 
                 </div>
               </div>
               <div class="grille_container">
-                <div class="content">
+                <div class="content reveal-10">
                   <img src="ressources/9.JPG" width="100%" alt="">
                   
                 
@@ -204,34 +211,37 @@
         
 </div>
 
+
+
     <div class="content_text reveal">
 
-        <h1><span>Edward </span><span>Kenway </span></h1>
-        <p> Lors de mon année préparatoire pour passer en axe Développement Web j'ai du réaliser un site sur un personnage de mon choix , étant fan du personnage j'ai choisi Edward Kenway de la licence Assassin's Creed . J'ai du réaliser le site en 5 pages imposées : Accueil / Histoire / Images / Blog / Contact . <br><br>
+        <h1 class="reveal-1"><span>Edward </span><span>Kenway </span></h1>
+        <p class="reveal-2"> Lors de mon année préparatoire pour passer en axe Développement Web j'ai du réaliser un site sur un personnage de mon choix , étant fan du personnage j'ai choisi Edward Kenway de la licence Assassin's Creed . J'ai du réaliser le site en 5 pages imposées : Accueil / Histoire / Images / Blog / Contact . <br><br>
          Mon site contient un menu burger , un dark mode , une galerie d'images mansory , une page de connexion , un formulaire de contact ... On peut se connecter soit en tant qu'utilisateur pour par exemple poster un article de blog ou un commentaire , on peut se connecter en tant qu'administrateur pour bannier des membres , supprimer des commentaires ou des articles de blog ou encore pour contacter les utilisateurs . <br><br>
         Chaque page est composé de plusieurs animations en css ou js : une animation pour le menu burger mais aussi pour les images placés autour du container , un bouton pour retourner en haut de la page et une animation pour modifier la taille des images dans la galerie mansory. </p>
    </div>
+ 
 
 
    <div class="container-fifth">
-    <h1 class="reveal"><span>Mon </span><span>Portfolio </span></h1>
+    <h1 class="reveal-1"><span>Mon </span><span>Portfolio </span></h1>
   
 
     <div class="grille2 reveal">
-      <div class="grid-item">
+      <div class="grid-item reveal-2">
       <img src="ressources/baya1.PNG" width="500px" height="250px">    
       </div>
-      <div class="grid-item">
+      <div class="grid-item reveal-3">
           <img src="ressources/baya2.PNG" width="500px" height="250px"> 
       </div>
-      <div class="grid-item">  <img src="ressources/baya3.PNG" width="500px" height="250px"> </div>
+      <div class="grid-item reveal-4">  <img src="ressources/baya3.PNG" width="500px" height="250px"> </div>
       
-      <div class="grid-item">  <img src="ressources/baya4.PNG" width="500px" height="250px"> </div>
-      <div class="grid-item">  <img src="ressources/baya5.PNG" width="500px" height="250px"> </div>
-      <div class="grid-item">  <img src="ressources/baya6.PNG" width="500px" height="250px"> </div>
-      <div class="grid-item">  <img src="ressources/baya7.PNG" width="500px" height="250px"> </div>
-      <div class="grid-item">  <img src="ressources/baya8.PNG" width="500px" height="250px"> </div>
-      <div class="grid-item">  <img src="ressources/baya9.PNG" width="500px" height="250px"></div>
+      <div class="grid-item reveal-5">  <img src="ressources/baya4.PNG" width="500px" height="250px"> </div>
+      <div class="grid-item reveal-6">  <img src="ressources/baya5.PNG" width="500px" height="250px"> </div>
+      <div class="grid-item reveal-7">  <img src="ressources/baya6.PNG" width="500px" height="250px"> </div>
+      <div class="grid-item reveal-8">  <img src="ressources/baya7.PNG" width="500px" height="250px"> </div>
+      <div class="grid-item reveal-9">  <img src="ressources/baya8.PNG" width="500px" height="250px"> </div>
+      <div class="grid-item reveal-10">  <img src="ressources/baya9.PNG" width="500px" height="250px"></div>
      
   
   
@@ -240,10 +250,11 @@
 
           
 
+
 <div class="contentenu_text reveal">
 
-    <h1><span>Site </span><span>BAP </span></h1>
-    <p> Lors de ma première année dans l'axe Développement Web nous avons du réaliser un site e-commerce pour une cliente . Le site est composé de 11 pages au total, celui-ci a été réalisé avec l'aide d'étudiants dans l'axe Création et Design et Communication Digitale et E-Business, nous avions aussi 2 chefs de projets pour l'administration. <br><br>
+    <h1 class="reveal-1"><span>Site </span><span>BAP </span></h1>
+    <p class="reveal-2"> Lors de ma première année dans l'axe Développement Web nous avons du réaliser un site e-commerce pour une cliente . Le site est composé de 11 pages au total, celui-ci a été réalisé avec l'aide d'étudiants dans l'axe Création et Design et Communication Digitale et E-Business, nous avions aussi 2 chefs de projets pour l'administration. <br><br>
      Le site a été réalisé via Wordpress et l'extension Woocommerce pour pouvoir acheter des articles. On peut se créer un compte utilisateur pour pouvoir accéder à ses commandes, changer ses moyens de paiement ou encore consulter les détails de son compte. <br><br>
      Les languages utilisés pour coder le site sont HTML, CSS,JS et PHP. Sur le site nous pouvons découvrir les collections de la marque Baya Rose, regarder des tutoriels pour apprendre à faire ses robes sois-même ou encore commander des articles pour se les faire livrer chez soi.  </p>
 </div>
@@ -258,11 +269,10 @@
     
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script src="app.js"></script>
+   
 </body>
 
 <footer class="footer">
-  <p>@PorfolioLouisNourry-2021</p>
+  <p>@PorfolioLouisNourry-2022</p>
 </footer>
 </html>
