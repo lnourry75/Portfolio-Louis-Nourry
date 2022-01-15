@@ -200,7 +200,7 @@ h1 span {
     width: auto;
     text-align: center;
     flex-wrap: wrap;
-    padding-top: 400px;
+    padding-top: 300px;
     padding-left: 0%;
   }
   
@@ -552,7 +552,7 @@ h1 span {
   
   @media (max-width: 991px) {
     .grille {
-      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+      
       grid-template-rows: minmax(auto, auto);
     }
   
@@ -631,7 +631,16 @@ h1 span {
   }
 
   .team{
-    padding-top: 580px;
+    padding-top: 300px;
+  }
+
+
+  .container-four{
+  
+  }
+
+  .grille{
+    display: block;
   }
 
   .content_text{
@@ -639,11 +648,20 @@ h1 span {
     margin-top: 150px;
   }
 
+  .content_text p{
+    font-size: 30px;
+  }
+
   .contentenu_text{
     padding: 20px;
     padding-top: 150px;
     padding-bottom: 50px;
   }
+
+.contentenu_text p{
+  font-size: 30px;
+}
+
   .scrollTop{
     display: none;
   }
